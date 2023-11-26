@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./imagenes/amazon-icon.webp" />
-    <title>Amazon.com. Gasta menos.Sonríe más.</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container container-header">
-        <div class="logo-container">
-            <div class="logo"></div>
-        </div>
-      </div>
-    </header>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./images/amazon-icon.webp" />
+        <title>Amazon.com. Gasta menos.Sonríe más.</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__navbar">
+                <div class="header__navbar-left-cart">
+                    <div class="header__navbar-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__icon1 bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        <div class="header__container-logo">
+                            <img class="header__logo" src="images/logo.png" alt="logo.png">
+                        </div>
+                        <div class="header__container-ubication">
+                            <div class="header__ubication">
+                                <img class="header__ubication-img" src="images/ubication.png" alt="ubication.png">
+                            </div>
+                            <div class="header__container-text">
+                                <span class="header__text-send">Enviar a</span>
+                                <strong class="header__text-country">Argentina</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__navbar-user-cart">
+                        <a class="header__link-user" href="#">
+                            <span class="header__link-text">Identifícate ›</span>
+                            <img class="header__link-img1" src="./images/user.png" alt="user.png">
+                        </a>
+                        <a class="header__link-cart" href="#">
+                            <span class="header__link-count">0</span>
+                            <img class="header__link-img2" src="./images/cart.png" alt="cart.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__navbar-center">
+                    <form class="header__form">
+                        <select class="header__options" name="category" id="category">
+                            <option class="header__option-title" disabled selected style="display: none;">Todos
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="header__arrow-down bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </option>
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                        <div class="header__container-search-icon">
+                            <input class="header__search" type="text" name="search" id="search" placeholder="Buscar Amazon">
+                            <svg class="header__icon-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__navbar-right">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </header>
+    </body>
 </html>
