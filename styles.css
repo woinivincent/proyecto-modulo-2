@@ -128,3 +128,165 @@
     justify-content: center;
     align-items: center;
 }
+.second {
+    width: 100%;
+    height: 40px;
+    background-color: #00453E;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    
+    
+  }
+  .second ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .second span {
+    font-size: 15px;
+  }
+  .second-1 div i {
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+  .second li {
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 7px 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+  .second-1 {
+    flex: 0.06;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .second-1 div {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+  .second-2 {
+    display: flex;
+    flex: 0.74;
+    justify-content: flex-start;
+  }
+  .second-3 {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .second-3 span {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+  .second-1 div span {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .second-1 div:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  .second-2 li:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  .second-3 span:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  
+  .line{
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(172,172,172);
+  }
+  .sidebar{
+
+    background-color: white;
+    width: 380px;
+    height: 100%;
+    transform: translateX(-390px);
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 101;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 30px black  ;
+  }
+  .hdn-head{
+    background-color:#00453E ;
+    height: 60px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  .hdn-head h2{
+    line-height: 60px;
+  }
+  .hdn-content h3{
+   padding: 20px 25px;
+    color: rgb(39,39,39);
+  
+  }
+  .hdn-content ul div{
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    color: rgb(70,70,70);
+   padding: 15px 25px;
+   justify-content: space-between;
+   
+  }
+  .bi-x-lg{
+    color: white;
+    top: 15px;
+    left: 400px;
+    display: none;
+    position: absolute;
+    font-size: 30px;
+    z-index: 101;
+    
+  }
+  .bi-chevron-right{
+    color: rgb(27,27,27);
+  }
+  .hdn-content ul div:hover{
+    background-color: rgb(230, 227, 227);
+  }
+  .hdn-content ul{
+    padding-bottom: 9px;
+  }
+  .black {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+  }
+  .black.active{
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .sidebar.active{
+    transform: translateX(0);
+  }
+  .bi-x-lg.active{
+    display: block;
+  }
+  .hdn-sign.active{
+    display: block;
+  }
